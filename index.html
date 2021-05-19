@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Safety BANK</title>
+  </head>
+  <style type="text/css">
+    
+    html,body
+    {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    }
+    .nav-link{
+      margin-right: 15px;
+      color:#9796f0;
+      letter-spacing: 0.5px;
+      transition: 0.5s;
+    }
+    .nav-link:hover{
+      text-decoration: none;
+      color: white;
+
+    }
+    h2{
+      color: #aef3ff;
+      letter-spacing: 0.5px;
+      font-family: 'Lora', serif;
+    }
+    .navbar{
+      background-color: black;
+    }
+   
+    .left-main{
+      width:50%;
+      height: 668px;
+      float: left;
+      
+      background-image: url('img/purp.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .right-main{
+      width: 50%;
+      height: 610px;
+      float: right;
+      background-color: white;
+    }
+    .h1-leftmain{
+      font-size: 240%;
+      padding:15px;
+      text-align: center;
+      color: white;
+      font-family: 'Lora', serif;
+      padding-top: 10%;
+    }
+    .p-leftmain{
+      font-size: 125%;
+      padding:15px;
+      width:80%;
+      margin-left: 50px;
+      text-align: center;
+      padding-top: 5%;
+      color: #350b40;
+      font-family: 'Lora', serif;
+    }
+    .footer-div{
+     width:100%;
+     height:50px;
+     background-color:#583d72;
+     color: white;
+     padding-top: 12px;
+     text-align: center;
+    }
+    hr {
+    clear: both;
+     visibility: hidden;
+    }
+    button{
+    border:none;
+    border-radius: 8px;
+    padding: 10px;
+    background:#eaafc8; 
+    color:#350b40;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Lora', serif;
+    }
+
+    button:hover{
+      background-color:#4C4B4B;
+      color: white;
+    }
+    @media (max-width: 380px) {
+      .left-main{
+        max-width: 100%;
+        height: 400px;
+        display: inline-block;
+
+      }
+      img.responsive {
+        max-width: 100%;
+        max-height: 400px;
+      }
+      .h1-leftmain{
+        font-size: 100%;
+        padding:15px;
+
+      }
+      .p-leftmain{
+        font-size: 55%;
+      
+        text-align: center;
+        margin: 5px;
+        margin-left: 15px;
+      }
+
+    }
+
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <h1 style="color: white;">Safety BANK</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"></button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="view-users.php">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transfermoney.php">Transfer Money</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transactionhistory.php">Transaction History</a>
+              </li>
+            </ul>
+          </div>
+       </nav>
+
+    <div class="main-div">
+      <div class="left-main"> <br> <br>
+        <h1 class="h1-leftmain">Safety BANK</h1>
+        <p class="p-leftmain">Safety Bank allows you to view users, transfer money to other account and view 
+          transaction history all at one place! To view a user's account, just click the Users button below or 
+         in the navigation bar. To transfer money to some other account, you just need to select the account to 
+          credit and type in the amount to be transferred. To view transaction history just click view transaction 
+          history button and you will see all the transactions that have taken place. All the functionalities are 
+          available at the click of a button!</p>
+      </div>
+      <div class="right-main">
+        <img src="img/bank-img.jpg" style="width: 100%;height: 669px;"class="responsive"/>
+      </div>
+    </div>
+    <br><br><hr>
+          <div class="container-fluid">
+            <div class="row activity text-center">
+                  <div class="col-md-4 act">
+                    <img src="img/user.png" class="img-fluid" style="padding-left: 20px; padding-bottom: 5px;">
+                    <br>
+                    <a href="view-users.php"><button>Users</button></a>
+                  </div>
+                  <div class="col-md-4 act">
+                    <img src="img/give.png" class="img-fluid" style="padding-top: 20px; padding-bottom: 5px;">
+                    <br>
+                    <a href="transfermoney.php"><button>Transact</button></a>
+                  </div>
+                  <div class="col-md-4 act">
+                    <img src="img/history.png" class="img-fluid" style="padding-top: 30px;">
+                    <br><br>
+                    <a href="transactionhistory.php"><button>Transaction History</button></a>
+                  </div>
+            </div>
+          </div>
+          <br><hr>
+  </body>
+    <footer>
+    <div class="footer-div">
+      <p style="text-align:center;color:white;">&copy; 2021 Vanshika Bhasin. The Sparks Foundation</p>
+    </div>
+    </footer>
+</html>
